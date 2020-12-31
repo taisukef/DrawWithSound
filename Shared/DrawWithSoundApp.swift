@@ -11,7 +11,7 @@ import SwiftUI
 struct DrawWithSoundApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DrawView()
         }
     }
 }

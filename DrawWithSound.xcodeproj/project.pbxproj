@@ -9,21 +9,24 @@
 /* Begin PBXBuildFile section */
 		696FC21D259D8F0D009EEB4F /* DrawWithSoundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FC20A259D8F0C009EEB4F /* DrawWithSoundApp.swift */; };
 		696FC21E259D8F0D009EEB4F /* DrawWithSoundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FC20A259D8F0C009EEB4F /* DrawWithSoundApp.swift */; };
-		696FC21F259D8F0D009EEB4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FC20B259D8F0C009EEB4F /* ContentView.swift */; };
-		696FC220259D8F0D009EEB4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FC20B259D8F0C009EEB4F /* ContentView.swift */; };
 		696FC221259D8F0D009EEB4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696FC20C259D8F0D009EEB4F /* Assets.xcassets */; };
 		696FC222259D8F0D009EEB4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696FC20C259D8F0D009EEB4F /* Assets.xcassets */; };
+		696FC22F259D8F48009EEB4F /* AudioGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FC22D259D8F48009EEB4F /* AudioGenerator.swift */; };
+		696FC230259D8F48009EEB4F /* AudioGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FC22D259D8F48009EEB4F /* AudioGenerator.swift */; };
+		696FC231259D8F48009EEB4F /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FC22E259D8F48009EEB4F /* DrawView.swift */; };
+		696FC232259D8F48009EEB4F /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FC22E259D8F48009EEB4F /* DrawView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		696FC20A259D8F0C009EEB4F /* DrawWithSoundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawWithSoundApp.swift; sourceTree = "<group>"; };
-		696FC20B259D8F0C009EEB4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		696FC20C259D8F0D009EEB4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		696FC211259D8F0D009EEB4F /* DrawWithSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawWithSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		696FC214259D8F0D009EEB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		696FC219259D8F0D009EEB4F /* DrawWithSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawWithSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		696FC21B259D8F0D009EEB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		696FC21C259D8F0D009EEB4F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		696FC22D259D8F48009EEB4F /* AudioGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioGenerator.swift; sourceTree = "<group>"; };
+		696FC22E259D8F48009EEB4F /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				696FC20A259D8F0C009EEB4F /* DrawWithSoundApp.swift */,
-				696FC20B259D8F0C009EEB4F /* ContentView.swift */,
+				696FC22D259D8F48009EEB4F /* AudioGenerator.swift */,
+				696FC22E259D8F48009EEB4F /* DrawView.swift */,
 				696FC20C259D8F0D009EEB4F /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -187,8 +191,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				696FC21F259D8F0D009EEB4F /* ContentView.swift in Sources */,
 				696FC21D259D8F0D009EEB4F /* DrawWithSoundApp.swift in Sources */,
+				696FC231259D8F48009EEB4F /* DrawView.swift in Sources */,
+				696FC22F259D8F48009EEB4F /* AudioGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +201,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				696FC220259D8F0D009EEB4F /* ContentView.swift in Sources */,
 				696FC21E259D8F0D009EEB4F /* DrawWithSoundApp.swift in Sources */,
+				696FC232259D8F48009EEB4F /* DrawView.swift in Sources */,
+				696FC230259D8F48009EEB4F /* AudioGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +327,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A2TF2C92PA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -342,6 +349,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A2TF2C92PA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
